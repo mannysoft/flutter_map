@@ -4,27 +4,32 @@ version: 0.12.0
 repository: https://github.com/johnpryan/flutter_map
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
   flutter: ">=2.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  tuple: ^1.0.2
+  tuple: ^2.0.0
   latlong2: ^0.8.0
   positioned_tap_detector_2: ^1.0.0
-  transparent_image: ^1.0.0
+  transparent_image: ^2.0.0
   async: ^2.1.0
-  flutter_image: ^3.0.0
-  vector_math: ^2.0.0
-  proj4dart: ^1.0.4
-  meta: ^1.1.0
-  collection: ^1.14.0
+  flutter_image: any
+  vector_math: ^2.1.0
+  proj4dart: ^2.0.0
+  collection: ^1.15.0
 
 dev_dependencies:
   pedantic: ^1.11.0
-  location: ^2.5.0
+  location: ^4.1.1
   flutter_test:
     sdk: flutter
-  test: ^1.9.0
-  mockito: ^4.1.4
+  test: ^1.16.5
+  mockito: ^5.0.2
+
+dependency_overrides: 
+  flutter_image: 
+    git: 
+      url: "https://github.com/flutter/flutter_image"
+      ref: null-safety
